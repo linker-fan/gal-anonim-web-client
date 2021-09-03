@@ -13,6 +13,11 @@ const Footer = () => {
                         <h4>Footer</h4>
                     </Col>
                 </Row>
+                <Row>
+                    <div className="text-center p-4">
+                        © 2021 Copyright:
+                    </div>
+                </Row>
             </Container>
         </div>
     );
