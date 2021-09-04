@@ -24,14 +24,15 @@ class AuthService {
         localStorage.removeItem("token");
     }
 
-    register(username,password1, password2){
+    register(username, email, password1, password2){
         let payload = {
             "username": username,
+            "email": email,
             "password1": password1,
             "password2": password2
         }
 
-        return axios.post(getBaseURL() + REACT_APP_REGISTER_ENDPOINT);
+        return axios.post(getBaseURL() + REACT_APP_REGISTER_ENDPOINT, payload);
     }
 }
 
